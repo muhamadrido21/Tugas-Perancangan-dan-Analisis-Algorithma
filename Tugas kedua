@@ -1,0 +1,24 @@
+start_jam = 8
+start_menit= 52
+start_detik = 45
+
+
+jam_kedatangan = 12
+menit_kedatangan = 15
+detik_kedatangan = 10
+
+
+start_total = start_jam * 3600 + start_menit * 60 + start_detik
+
+
+total_waktu_perjalanan = jam_kedatangan * 3600 + menit_kedatangan * 60 + detik_kedatangan
+
+
+waktu_perjalanan = total_waktu_perjalanan - start_total
+
+jam_perjalanan = waktu_perjalanan // 3600
+menit_perjalanan = (waktu_perjalanan % 3600) // 60
+detik_perjalanan = waktu_perjalanan % 60
+
+
+print(f"Waktu Perjalanan: {jam_perjalanan} jam, {menit_perjalanan} menit, dan {detik_perjalanan} detik")
